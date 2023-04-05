@@ -1,5 +1,5 @@
 
-<a href="https://jsden.dev" target="_blank"><img src="img/brand.png" width="300px" alt="JSDen"/></a>
+<a href="https://jsden.dev" target="_blank"><img src="img/brand.jpg" width="300px" alt="JSDen"/></a>
 
 [JSDen.dev](https://jsden.dev) is an minimal JavaScript playground that allows you to
 test code and get instant feedback. It is a fully client-side app so you can install
@@ -18,20 +18,9 @@ it as a progressive web app (PWA) on your device to use offline.
 * Offline support
 
 
-## How to install
+## Help, commands and how to use libraries or modules
 
-**iOS Safari**
-
-Go to *Share Menu > Add to Home Screen*
-
-**Chrome**
-
-Go to *Settings > Add to Home Screen*
-
-
-## How to use libraries or frameworks
-
-Add any scripts to the HTML tab as you would in a HTML file.
+Type `help()` in the editor panel to view built-in commands and basic features.
 
 
 ## Contributing
