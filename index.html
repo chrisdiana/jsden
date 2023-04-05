@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover" />
+    <title>JSDen - JavaScript Playground</title>
+    <meta name="description" content="JavaScript playground to test your JavaScript online. Optimized for mobile and tablet devices.">
+    <meta name="keywords" content="javascript playground, online javascript editor, test js online, web playground, testing javascript online, online ide, online code editor, js editor">
+    <meta name="author" content="JSDen">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!--  Social -->
+    <meta property="og:title" content="JSDen">
+    <meta property="og:description" content="Open source mobile friendly JavaScript playground.">
+    <meta property="og:image" content="/img/social.jpg">
+    <meta property="og:url" content="https://jsden.dev">
+    <meta name="twitter:card" content="/img/social.jpg">
+    <meta property="og:site_name" content="JSDen">
+    <meta name="twitter:image:alt" content="JSDen Screenshot">
+
+    <!-- Icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#82cdfb">
+    <link rel="shortcut icon" href="img/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1b1b">
+    <meta name="msapplication-config" content="img/icons/browserconfig.xml">
+    <meta name="theme-color" content="#1b1b1b">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="#1b1b1b">
+
+    <!--  Splash screens -->
+    <link href="img/splash/iphone5_splash.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/iphone6_splash.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/iphoneplus_splash.png" media="(device-width: 621px) and (device-height: 1104px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="img/splash/iphonex_splash.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="img/splash/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/iphonexsmax_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" rel="apple-touch-startup-image" />
+    <link href="img/splash/ipad_splash.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/ipadpro1_splash.png" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/ipadpro3_splash.png" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+    <link href="img/splash/ipadpro2_splash.png" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+
+    <link rel="stylesheet" href="lib/codemirror.min.css" />
+    <link rel="stylesheet" href="lib/codemirror.bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+  <div class="split">
+    <div id="editor-container"></div>
+    <div id="result-container">
+      <div id="result"></div>
+    </div>
+    <button id="run">
+      <img class="logo" src="img/logo.png"/>
+      Run &rsaquo;
+    </button>
+  </div>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4JX71CKZL7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4JX71CKZL7');
+  </script>
+
+  <script src="lib/split.min.js"></script>
+  <script src="lib/renderjson.js"></script>
+  <script src="lib/codemirror.min.js"></script>
+  <script src="lib/codemirror.bundle.min.js"></script>
+
+  <script src="js/version.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/sw-init.js"></script>
+  </body>
+</html>

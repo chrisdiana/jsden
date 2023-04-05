@@ -1,0 +1,228 @@
+:root {
+  --dark-bg: #272822;
+  --dark-gutter: #373737;
+  --dark-font: #eee;
+  --light-bg: #fff;
+  --light-font: #777;
+  --light-gutter: #eee;
+  --primary: rgb(0, 82, 128);
+}
+
+html, body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+a {
+  color: var(--dark-font);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
+/* Light Mode */
+body.light-mode {
+  background: var(--light-bg);
+  color: var(--light-font);
+}
+
+body.light-mode div#result-container {
+  background: var(--light-bg);
+  color: var(--light-font);
+}
+
+body.light-mode #run {
+  background-color: var(--light-gutter);
+  color: var(--light-font);
+}
+
+body.light-mode .gutter {
+  background-color: var(--light-gutter);
+}
+
+body.light-mode #result .highlight {
+  color: #000;
+}
+
+body.light-mode a {
+  color: var(--light-font);
+}
+
+body.light-mode a:hover {
+  color: var(--primary);
+}
+
+
+#editor-container {
+  height: 100%;
+}
+#result-container {
+  height: 100%;
+  font-family: Hack, Menlo, Monaco, 'Droid Sans Mono', 'Courier New', monospace;
+  white-space: pre;
+  background: var(--dark-bg);
+  color: var(--dark-font);
+  font-size: 18px;
+  overflow: scroll;
+  position: relative;
+}
+
+.result-error {
+  color: red;
+}
+
+.result-info {
+  color: #777;
+}
+
+.logo {
+  height: 15px;
+}
+
+#result {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.result-item, .renderjson {
+  margin: 5px;
+}
+
+#result .highlight {
+  color: #fff;
+}
+
+.split {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.split > div {
+  float: left;
+  height: 100%;
+}
+
+
+.gutter {
+  background-color: var(--dark-gutter);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.gutter.gutter-horizontal {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+  cursor: col-resize;
+}
+.gutter.gutter-vertical {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAFAQMAAABo7865AAAABlBMVEVHcEzMzMzyAv2sAAAAAXRSTlMAQObYZgAAABBJREFUeF5jOAMEEAIEEFwAn3kMwcB6I2AAAAAASUVORK5CYII=');
+  cursor: row-resize;
+}
+
+#run {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  z-index: 99;
+  background-color: #0f0f0f;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+#run:hover {
+  background-color: rgb(0, 82, 128);
+}
+
+@media (max-width: 700px) {
+  .split > div {
+    float: initial;
+    height: 100%;
+  }
+  #editor {
+    width: 100%;
+  }
+  #run {
+    top: 5px;
+    right: 5px;
+    bottom: initial;
+  }
+}
+
+/* CodeMirror */
+.CodeMirror {
+  height: 100%;
+  font-size: 18px;
+}
+.CodeMirror-hints {
+    position: absolute;
+    z-index: 10;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0px;
+    border: 0px solid #000;
+    background: #000;
+    font-size: 1rem;
+    font-family: monospace;
+    max-height: 20em;
+    overflow-y: auto;
+}
+.CodeMirror-hint {
+    margin: 0;
+    padding: 0 4px;
+    border-radius: 2px;
+    white-space: pre;
+    color: #fff;
+    cursor: pointer;
+}
+li.CodeMirror-hint-active {
+    background: #4a4a4a;
+    color: #fff;
+}
+
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
