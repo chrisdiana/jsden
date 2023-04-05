@@ -1,9 +1,8 @@
 
-<a href="https://jsden.dev" target="_blank"><img src="img/brand.jpg" width="300px" alt="JSDen"/></a>
+<a href="https://jsden.dev" target="_blank"><img src="img/brand.png" width="300px" alt="JSDen"/></a>
 
-[JSDen.dev](https://jsden.dev) is an minimal JavaScript playground that allows you to
-test code and get instant feedback. It is a fully client-side app so you can install
-it as a progressive web app (PWA) on your device to use offline.
+[jsden.dev](https://jsden.dev) is an minimal JavaScript playground that allows you to
+test code and get instant feedback.
 
 ![JSDen Screenshot](img/ipad-1.png)
 
@@ -12,13 +11,14 @@ it as a progressive web app (PWA) on your device to use offline.
 
 * JavaScript console emulation
 * Preview panel
-* Designed for mobile and tablet use
+* Mobile and tablet friendly
+* Install as a progressive web app (PWA) for offline use
 * Light & dark themes
 * Keyboard shortcuts
 * Offline support
 
 
-## Help, commands and how to use libraries or modules
+## Help, commands, using external libraries
 
 Type `help()` in the editor panel to view built-in commands and basic features.
 
@@ -30,7 +30,7 @@ Type `help()` in the editor panel to view built-in commands and basic features.
 
 ```
 $ git clone git@github.com:chrisdiana/jsden.git
-$ cd webden/
+$ cd jsden/
 $ python3 -m http.server 8080
 ```
 
