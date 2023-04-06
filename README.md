@@ -4,9 +4,6 @@
 [jsden.dev](https://jsden.dev) is an minimal JavaScript playground that allows you to
 test code and get instant feedback.
 
-![JSDen Screenshot](img/ipad-1.png)
-
-
 ## Features
 
 * JavaScript console emulation
